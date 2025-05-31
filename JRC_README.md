@@ -8,9 +8,10 @@ https://superset.apache.org/docs/installation/docker-compose
 ##### Map in the data environment to the docker-compose.yml
 x-superset-volumes:
   - /home/clark/source/callcenter/data/dw:/opt/dw 
+  
 ##### Launch build environment
 ```
-sudo docker compose -f docker-compose-image-tag.yml up
+docker compose -f docker-compose-image-tag.yml up
 ```
 
 After launching the non-dev environment 
