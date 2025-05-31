@@ -26,7 +26,9 @@ I'm not sure when or where this change was made, but the docker-init.sh script i
 root@5c52fe612108:/app# docker/docker-init.sh
 ```
 
-# DuckDB install (inside docker bash)
+### Map
+
+### DuckDB install (inside docker bash)
 https://medium.com/free-or-open-source-software/how-to-connect-apache-superset-with-duckdb-memory-355da43aa410
 
 ```
@@ -35,3 +37,8 @@ root@5c52fe612108:/app# pip install duckdb duckdb-engine
 
 New Connection: duckdb:///:memory:
 
+### Export/Import Dashboards (inside docker bash)
+```
+# cd ../opt/dw/bi
+# superset export-dashboards
+```
