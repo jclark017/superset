@@ -8,7 +8,7 @@ https://superset.apache.org/docs/installation/docker-compose
 ##### Map in the data environment to the docker-compose.yml
 x-superset-volumes:
   - /home/clark/source/callcenter/data/dw:/opt/dw 
-  
+
 ##### Launch build environment
 ```
 docker compose -f docker-compose-image-tag.yml up
@@ -21,7 +21,7 @@ The default container name that you want in the non-dev environment is "superset
 ```
 $ docker exec -it superset_app bash
 ```
-
+# To load samples
 I'm not sure when or where this change was made, but the docker-init.sh script is now at /app/docker/docker-init.sh.
 ```
 root@5c52fe612108:/app# docker/docker-init.sh
