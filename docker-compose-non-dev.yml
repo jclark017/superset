@@ -28,7 +28,7 @@ x-superset-volumes:
   &superset-volumes # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
   - ./docker:/app/docker
   - superset_home:/app/superset_home
-  - ~/source/callcenter/data/dw:/opt/dw
+  - /home/clark/source/callcenter/data/dw:/opt/dw
 
 x-common-build: &common-build
   context: .
