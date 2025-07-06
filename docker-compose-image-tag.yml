@@ -29,7 +29,7 @@ x-superset-volumes:
   &superset-volumes # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
   - ./docker:/app/docker
   - superset_home:/app/superset_home
-  - /home/clark/source/callcenter/data/dw:/opt/dw
+  - ~/source/callcenter/data/dw:/opt/dw
 
 services:
   redis:
