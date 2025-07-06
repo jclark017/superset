@@ -1,11 +1,10 @@
-### Install Instructions
-Use Option 1
-
+## Install Instructions
+### Use Option 1
 https://superset.apache.org/docs/installation/docker-compose
 
-#### Setup after install
+### Setup after install
 
-## Swap
+#### Swap
 Digital Ocean doesn't create swap space. Use this to make a 1GB swap: https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-22-04/
 
 ##### Map in the data environment to the docker-compose.yml
@@ -33,10 +32,10 @@ $ docker exec -it superset_app bash
 https://medium.com/free-or-open-source-software/how-to-connect-apache-superset-with-duckdb-memory-355da43aa410
 
 ```
-root@5c52fe612108:/app# pip install duckdb duckdb-engine
+# pip install duckdb duckdb-engine
 ```
 
-New Connection: duckdb:///:memory:
+New Dataset Connection: duckdb:///:memory:
 
 ### Export/Import Dashboards (inside docker bash)
 To export
